@@ -1,17 +1,23 @@
 # Jammming
 
-This project is served on [Github Pages](https://jandw.github.io/codeacademy-jamming) instead of having been deployed by Surge.
+This project is served on [Github Pages](https://jandw.github.io/codeacademy-jammming) instead of having been deployed by Surge.
 
 ## 🚨 🚨 🚨 A few questions for the codeacademy reviewer 🚨 🚨 🚨
 
-1. When searching, the page reloads, I'm assuming because of the [redirection happening](https://github.com/JanDW/codeacademy-jammming/blob/21cc9bf60fa562b20b2f7272987b6d53c72d3587/src/util/Spotify.js#L40) after getting the `accessToken`. How can I avoid this?
+A bit overkill, but it got your attention, didn't it?
+
+1. When searching, the page reloads, requiring re-entry of the search term. I'm assuming because of the [redirection happening](https://github.com/JanDW/codeacademy-jammming/blob/21cc9bf60fa562b20b2f7272987b6d53c72d3587/src/util/Spotify.js#L40) after getting the `accessToken`. How can I avoid this?
 
 2. How do I best reset the state of `this.state.playListName` and `this.state.playListTracks`?
    Currently, [I just reset them](https://github.com/JanDW/codeacademy-jammming/blob/61c00e262ab2b5076545c3b4cca829a5f507c58a/src/components/App/App.js#L53), regardless of whether the requests have actually succeeded. I have tried chaining `.then()` to `Spotify.savePlayList()` (like I did for `Spotify.search(searchTerm)`) but since the promise doesn't return anything that doesn't work.
 
-3. Would love to see what you guys consider the best solution for the `Spotify.js` file.
+3. Would love to see what a better solution is for the `Spotify.js` file. I mean, what's in yours?
 
 Thanks!
+
+## Deploying to Github pages
+
+Run `yarn run deploy`
 
 ---
 
@@ -21,7 +27,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -29,12 +35,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `yarn run build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -44,7 +50,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `yarn run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
