@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/codeacademy-jamming/precache-manifest.918c62867b256fd676f263ec6c655011.js"
+  "/codeacademy-jammming/precache-manifest.2eb15a797f43a7ab1f5b37af32293619.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/codeacademy-jamming/index.html", {
+workbox.routing.registerNavigationRoute("/codeacademy-jammming/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
