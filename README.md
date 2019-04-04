@@ -1,3 +1,20 @@
+# Jammming
+
+This project is served on [Github Pages](https://jandw.github.io/codeacademy-jamming) instead of having been deployed by Surge.
+
+## 🚨 🚨 🚨 A few questions for the codeacademy reviewer 🚨 🚨 🚨
+
+1. When searching, the page reloads, I'm assuming because of the [redirection happening](https://github.com/JanDW/codeacademy-jammming/blob/21cc9bf60fa562b20b2f7272987b6d53c72d3587/src/util/Spotify.js#L40) after getting the `accessToken`. How can I avoid this?
+
+2. How do I best reset the state of `this.state.playListName` and `this.state.playListTracks`?
+   Currently, [I just reset them](https://github.com/JanDW/codeacademy-jammming/blob/61c00e262ab2b5076545c3b4cca829a5f507c58a/src/components/App/App.js#L53), regardless of whether the requests have actually succeeded. I have tried chaining `.then()` to `Spotify.savePlayList()` (like I did for `Spotify.search(searchTerm)`) but since the promise doesn't return anything that doesn't work.
+
+3. Would love to see what you guys consider the best solution for the `Spotify.js` file.
+
+Thanks!
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
