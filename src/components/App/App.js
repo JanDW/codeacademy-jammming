@@ -48,7 +48,6 @@ class App extends React.Component {
   }
 
   savePlayList() {
-    debugger;
     Spotify.savePlayList(this.state.playListName, this.state.playListTracks);
 
     // @TODO Clearly I should await the outcome for .savePlayList, but using .then() doesn't work
