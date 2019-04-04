@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/codeacademy-jammming/static/js/runtime~main.03e4cdcd.js"
   },
   {
-    "revision": "a888076121d83288170c",
-    "url": "/codeacademy-jammming/static/js/main.83aa49eb.chunk.js"
+    "revision": "20268bf0b9f0b5f51090",
+    "url": "/codeacademy-jammming/static/js/main.17cbdc3e.chunk.js"
   },
   {
     "revision": "a3ff84d27d844bb31518",
     "url": "/codeacademy-jammming/static/js/2.f3f7640a.chunk.js"
   },
   {
-    "revision": "a888076121d83288170c",
+    "revision": "20268bf0b9f0b5f51090",
     "url": "/codeacademy-jammming/static/css/main.4231133a.chunk.css"
   },
   {
-    "revision": "b15d462ebd238cf3baf2ef846f7f7f16",
+    "revision": "4f4fb7d7d4b4ec85033bdc432b03316c",
     "url": "/codeacademy-jammming/index.html"
   }
 ];
